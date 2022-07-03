@@ -1,29 +1,28 @@
 import { useState } from "react";
 import styled from "styled-components";
 import React from "react";
-import logo from "../assets/logo.png"
+import logo from "../assets/logo.png";
 import { NavLink } from "react-router-dom";
 
 export default function Navigation() {
+  const [openLogin, setOpenLogin] = useState();
 
+  const clickHandler = () => {
+    
+  }
 
   return (
     <Nav>
       <Logo>
-      <img src={logo} height={70} width={70} />
+        <img src={logo} height={70} width={70} />
       </Logo>
       <ButtonContainer>
-      <NavButton>
-LOG IN
-      </NavButton>
-      <NavButton>
-REGISTER
-      </NavButton>
+        <NavButton>LOG IN</NavButton>
+        <NavButton>REGISTER</NavButton>
       </ButtonContainer>
     </Nav>
   );
 }
-
 
 const Nav = styled.div`
     color: #000000;
@@ -41,7 +40,7 @@ const Nav = styled.div`
     background-image: url("https://www.transparenttextures.com/patterns/sprinkles.png");
   `;
 
-  const Logo = styled.a`
+const Logo = styled.a`
   // margin-left: 0.7rem;
     height: 70px;
     width: 70px;
@@ -53,23 +52,23 @@ const Nav = styled.div`
     justify-content: space-between;
     `;
 
-    const ButtonContainer = styled.div`
-    width: 500px;
-    // border: 4px solid green;
-    display: flex;
-    justify-content: flex-end;
-    `
+const ButtonContainer = styled.div`
+  width: 500px;
+  // border: 4px solid green;
+  display: flex;
+  justify-content: flex-end;
+`;
 
-  const NavButton = styled.button`
-    width: 170px;
-    height: 40px;
-    font: 30px;
-    color: white;
-    border: none;
-    cursor: pointer;
-    background-color: teal;
-    border-radius: 10px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    margin-right: 0.5rem;
-  `
+const NavButton = styled.button`
+  width: 170px;
+  height: 40px;
+  font: 30px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: teal;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-right: 0.5rem;
+`;
