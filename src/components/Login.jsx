@@ -33,6 +33,10 @@ align-items: center;
 font-family: "Montserrat", sans-serif;
 font-size: 30px;
 flex-direction: column;
+position: relative;
+top: 25%;
+left: 33%;
+
 `
 
 const Form = styled.div`
