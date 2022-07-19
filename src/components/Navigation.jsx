@@ -15,6 +15,11 @@ export default function Navigation() {
   const openLogin = () => setOpenLog(true);
   const closeLogin = () => setOpenLog(false);
 
+  const [openReg, setOpenReg] = React.useState(false);
+  const openRegister = () => setOpenReg(true);
+  const closeRegister = () => setOpenReg(false);
+
+
   return (
     <Nav>
       <Logo>
@@ -32,7 +37,15 @@ export default function Navigation() {
         <Login/>
       </Modal>
         <NavButton
-         >REGISTER</NavButton>
+         onClick={openRegister}>REGISTER</NavButton>
+         <Modal
+        open={openReg}
+        onClose={closeRegister}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Register/>
+      </Modal>
       </ButtonContainer>
     </Nav>
   );

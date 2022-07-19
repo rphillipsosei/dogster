@@ -12,8 +12,7 @@ function App() {
 <Navigation/>
 <Hero/>
 <Footer/>
-<Login/>
-<Register/>
+
     </div>
   );
 }

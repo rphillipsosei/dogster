@@ -34,16 +34,20 @@ const RegisterContainer = styled.div`
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   flex-direction: column;
+  position: relative;
+  top: 25%;
+  left: 35%;
 `;
 
 const Form = styled.div`
   display: flex;
   flex-direction: column;
-text-align: center;
+  text-align: center;
 `;
 
 const Label = styled.label`
-font-size: 25px`
+  font-size: 25px;
+`;
 
 const Inputs = styled.input`
   height: 40px;
